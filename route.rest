@@ -1,0 +1,33 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/users/create
+Content-Type: application/json
+
+{
+    "name": "Testing User",
+    "address": "Tetsing address 1 and 2",
+    "city": "user_info.City",
+    "state": "user_info.State",
+    "country": "user_info.Country",
+    "postcode": 90004,
+    "phone": 12312312312,
+    "email_address": "user_info.Email_address",
+    "email_domain": "user_info.Email_domain",
+    "ip_address": "user_info.IP_address"
+}
+###
+
+GET http://localhost:3000/users/6151753656c18b72639f8f0c
+###
+
+DELETE http://localhost:3000/users/6151753656c18b72639f8f0c
+###
+
+PATCH http://localhost:3000/users/61517a0a70ee8e0408a82254
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
